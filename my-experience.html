@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefano Biosa portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles-experience.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css">
+</head>
+<body>
+   <header class="header">
+    <img class="logo" src="images/logo.svg">
+    <nav class="nav_links">
+        <a href="https://drive.google.com/drive/folders/1MwcKk2oT1Pn0uwmosYyEb2800HsH9PFL?usp=sharing" target="_blank">Download CV</a>
+    </nav>
+    <!--Mobile/Tablet Navbar-->
+    <svg onclick="showSidebar()" class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" width="40">
+        <defs>
+            <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%"/>
+                <stop offset="100%"/>
+            </linearGradient>
+        </defs>
+        <path d="M80-560v-320h320v320H80Zm80-80h160v-160H160v160ZM80-80v-320h320v320H80Zm80-80h160v-160H160v160Zm400-400v-320h320v320H560Zm80-80h160v-160H640v160ZM560-80v-320h320v320H560Zm80-80h160v-160H640v160ZM320-640Zm0 320Zm320-320Zm0 320Z" fill="url(#iconGradient)"/>
+    </svg>    
+    <script>
+       function showSidebar() {
+    const sidebar = document.querySelector(".nav_mobile");
+    sidebar.style.display = "flex";
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector(".nav_mobile");
+            sidebar.style.display = "none";
+        }
+    </script>
+    <nav class="nav_mobile">
+        <svg onclick="hideSidebar()" class="menu-icon-close" xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px">
+            <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" fill="url(#iconGradient)"/></svg>
+        <a onclick="hideSidebar()" href="#skills">My skills</a>
+        <a href="cv.html">My Experience</a>
+    </nav>
+   </header>
+   <div id="fullpage">
+        <div class="section" id="section-1">
+            <h1>My Journey</h1>
+        </div>
+        <div class="section">
+            <img src="images/icon-grade.svg"/>
+            <h1>2016</h1>
+            <p></p>
+            <div class="content">
+                High School Diploma
+            </div>
+        </div>
+        <div class="section" id="section-2">
+            <img src="images/logo-benaco.svg"/>
+            <h1>2018</h1>
+            <p></p>
+            <div class="content">
+                Chef de partie
+            </div>
+        </div>
+        <div class="section" id="section-3">
+            <img src="images/logo-dc.svg"/>
+            <h1>2021</h1>
+            <p></p>
+            <div class="content">
+                Master's Degree
+            </div>
+        </div>
+        <div class="section" id="section-4">
+            <img src="images/logo-genedos.svg"/>
+            <h1>2022</h1>
+            <p></p>
+            <div class="content">
+                Jr. Inbound Marketing Specialist
+            </div>
+        </div>
+        <div class="section" id="section-5">
+            <img src="images/logo-start.svg"/>
+            <h1>2024</h1>
+            <p></p>
+            <div class="content">
+                Master's Degree
+            </div>
+        </div>
+    </div>
+    <nav id="fp-nav">
+        <ul>
+            <li><a href="#section-1"><span></span></a></li>
+            <li><a href="#section-2"><span></span></a></li>
+            <li><a href="#section-3"><span></span></a></li>
+            <li><a href="#section-4"><span></span></a></li>
+            <li><a href="#section-5"><span></span></a></li>
+        </ul>
+    </nav>
