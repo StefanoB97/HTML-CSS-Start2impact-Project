@@ -66,15 +66,15 @@ display: none;
 
 .section h1{
     margin-top: 20px;
-    font-size: 7vw;
-    color: rgb(155, 41, 41);
+    font-size: 3vw;
     font-family: "Lato", sans-serif;
-    font-weight: 700;       
+    font-weight: 700;    
+    color: #000000;   
 }
 
 
 .section img{
-    border-radius: 50%;
+    border-radius: 30%;
     height: 200px;
     width: 200px;
     object-fit: cover;
@@ -85,13 +85,18 @@ display: none;
 
 #section-1 h1{
     font-size: 10vw;
-    color: rgb(0, 0, 0);
     font-family: "Lato", sans-serif;
     font-weight: 700;
+    background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
 }
 
 .content{
-    color: #000000;
+    background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-size: 5vw;
     font-family: "Lato", sans-serif;
 }
@@ -122,6 +127,84 @@ p{
 
 #fp-nav ul li a.active span {
     background-color: #6549D5;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
+    margin-top: 70px;
+    font-size: 13px;
+}
+
+.nome-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 25PX;
+    font-size: 3rem;
+    font-family: "Smooch", cursive;
+    font-weight: 700;
+
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons .bi{
+    width:40px;
+    height: 40px;
+    margin-right: 15px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.social-icons .bi:hover{
+    width: 30px;
+    color: #000000;
+}
+
+.start-icon{
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    padding-right: 20px;
+}
+
+.start-icon .arrow{
+    width:35px;
+    height: 35px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.start-icon .arrow:hover{
+    width: 30px;
+    color: #000000;
+}
+
+.copyright-section{
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-section p{
+    font-size: 1vw;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 
