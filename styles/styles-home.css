@@ -131,6 +131,7 @@ display: none;
 }
 
 .home-content h3{
+    z-index: -1;
     font-size: 32px;
     font-weight: 700;
     font-family: "Lato", sans-serif;
