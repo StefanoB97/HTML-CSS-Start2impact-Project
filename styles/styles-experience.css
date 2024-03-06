@@ -84,14 +84,52 @@ display: none;
 }
 
 #section-1 h1{
-    font-size: 10vw;
+    font-size: 7vw;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
+
+ @-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
 
 .content{
     background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
