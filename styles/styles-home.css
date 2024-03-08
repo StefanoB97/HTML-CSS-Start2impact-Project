@@ -12,6 +12,7 @@ body{
 
 header{
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,11 +38,12 @@ header{
     transition: .3s;
     padding: 10px;
     background-color: #000000;
-    
 }
 
 .nav_links a:hover{
-    color: #6549D5;
+    color: black;
+    background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
+    transition: 1s ease-in;
 }
 
 .nav_mobile{
@@ -136,7 +138,6 @@ display: none;
     font-weight: 700;
     font-family: "Lato", sans-serif;
     background: linear-gradient(95deg, #059DFF 15%, #6549D5 45%, #E33FA1 75%, #FB5343 100%) 98%/200% 100%;
-    background-clip: content-box;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-animation: focus-in-expand 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -195,15 +196,21 @@ display: none;
     text-align: center;
     width: 200px;
     height: 100%;
-    background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
     border-radius: 8px;
     font-size: 19px;
-    color: aliceblue;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
-    font-family: "Lato" sans-serif;
+    color: #6549D5;
+    background-color: #ffffff;
 }
+
+.btn-box a:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
+    transition: 1s ease-in;
+}
+
 
 .skills-section{
     margin-top: 50px;
