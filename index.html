@@ -14,15 +14,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--Facebook OG-->
     <meta property="og:site_name" content="Stefano Biosa" />
-    <meta property=“og:title” content="Stefano Biosa portfolio"/>
+    <meta property=“og:title” content="Stefano Biosa Portfolio Website"/>
     <meta property="og:description" content="Embarking on my journey to become a skilled front-end developer. Explore my portfolio for innovative development and seamless user interactions." />
     <meta property="og:url" content="https://www.colbyfayock.com/2020/03/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://res.cloudinary.com/fay/image/upload/w_1280,h_640,c_fill,q_auto,f_auto/w_860,c_fit,co_rgb:232129,g_west,x_80,y_-60,l_text:Source%20Sans%20Pro_70_line_spacing_-10_semibold:Anyone%20Can%20Map!%20Inspiration%20and%20an%20introduction%20to%20the%20world%20of%20mapping/blog-social-card-1.1" />
-    <meta property="og:image:secure_url" content="https://res.cloudinary.com/fay/image/upload/w_1280,h_640,c_fill,q_auto,f_auto/w_860,c_fit,co_rgb:232129,g_west,x_80,y_-60,l_text:Source%20Sans%20Pro_70_line_spacing_-10_semibold:Anyone%20Can%20Map!%20Inspiration%20and%20an%20introduction%20to%20the%20world%20of%20mapping/blog-social-card-1.1" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="640" />
+    <meta property="og:image" content="../images/open-graph-image.svg">
+    <!--Twitter OG-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://portfoliowebsite-s2i.netlify.app">
+    <meta name="twitter:title" content="Stefano Biosa Portfolio Website">
+    <meta name="twitter:description" content="Embarking on my journey to become a skilled front-end developer. Explore my portfolio for innovative development and seamless user interactions.">
+    <meta name="twitter:image" content="../images/open-graph-twitter-image.svg">
+    <script src="script.js" type="text/javascript"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({publicKey: "bTliYHiuQeXgYFDd9"});
+        })();
+    </script>
 </head>
 <body>
    <header class="header">
@@ -218,19 +229,19 @@
         <form method="post">
             <div class="form-box">
                 <div class="form-group">
-                    <input placeholder="Your Name" type="text" name="your-name" required>
+                    <input id="FullName" placeholder="Your Name" type="text" name="your-name" required>
                 </div>
                 <div class="form-group">
                     <input placeholder="Your Number" type="tel" name="your-number">
                 </div>
                 <div class="form-group">
-                    <input placeholder="Your Email" type="email" name="your-email" required>
+                    <input id="email_id" placeholder="Your Email" type="email" name="your-email" required>
                 </div>
                 <div class="form-group">
-                    <input placeholder="Your Message" type="text" name="your-message">
+                    <input id="message" placeholder="Your Message" type="text" name="your-message">
                 </div>
                 <div class="btn-form">
-                    <button type="submit">Submit</button>
+                    <button onclick="SendMail()">Submit</button>
                 </div>
             </div>
         </form>
