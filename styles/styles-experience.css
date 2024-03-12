@@ -84,11 +84,13 @@ display: none;
     box-shadow: 0 10px 30px rgb(0 0 0 / 15%), 0 1px 4px rgb(0 0 0 / 15%), 0 1px 0 rgb(0 0 0 / 7%);
 }
 
+
 #section-1 h1{
-    z-index: -1;
     font-size: 7vw;
     font-family: "Lato", sans-serif;
     font-weight: 700;
+    position: relative;
+    z-index: -1;
     background: linear-gradient(95deg, #059DFF 15%, #6549D5 55%, #E33FA1 120%) 98%/200% 100%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
