@@ -211,7 +211,6 @@ display: none;
     transition: 1s ease-in;
 }
 
-
 .skills-section{
     margin-top: 50px;
     padding-top: 50px;
@@ -219,7 +218,7 @@ display: none;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: azure;
+    background-color: white;
     align-items: center;
 
 }
@@ -277,10 +276,12 @@ display: none;
 .skill-img{
     width: 90px;
     height: 90px;
-    border-radius: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 15%), 0 1px 4px rgb(0 0 0 / 15%), 0 1px 0 rgb(0 0 0 / 7%);
 }
 
 .skill-badge{
