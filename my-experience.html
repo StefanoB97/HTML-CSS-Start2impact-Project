@@ -109,7 +109,24 @@
             <p>After a period of reflection, I understand that my true passion for technology is aimed at development, and I decide to train together with start2impact university, with the aim of becoming a full-stack.</p>
         </div>
     </div>
-    <nav id="fp-nav">
+    <section class="container" id="section-7">
+        <div class="project-title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="slider-wrapper">
+            <div class="slider">
+               <img id="slide-1" src="assets/images/online-evaluator.svg"/>
+               <img id="slide-2" src="assets/images/inbound-service.svg"/>
+               <img id="slide-3" src="assets/images/app-meditation.svg"/>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section>
+    <nav class="fp-nav" id="fp-nav">
         <ul>
             <li><a href="#section-1"><span></span></a></li>
             <li><a href="#section-2"><span></span></a></li>
@@ -117,9 +134,20 @@
             <li><a href="#section-4"><span></span></a></li>
             <li><a href="#section-5"><span></span></a></li>
             <li><a href="#section-6"><span></span></a></li>
-
         </ul>
     </nav>
+    <script>
+        window.addEventListener('scroll', function() {
+            var section7 = document.getElementById('section-7');
+            var sidebar = document.getElementById('fp-nav');
+            var section7Position = section7.getBoundingClientRect().top;
+            if (section7Position < window.innerHeight) {
+                sidebar.classList.add('hidden');
+            } else {
+                sidebar.classList.remove('hidden');
+            }
+            });
+    </script>
     <footer class="footer-container">
         <div class="col">
             <h1 class="nome-footer">Stefano.</h1>
